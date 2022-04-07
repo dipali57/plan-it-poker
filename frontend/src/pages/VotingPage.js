@@ -458,7 +458,7 @@ function VotingPage() {
                         <div className="cardbtn">
                             <Button variant="contained"
                                 fullWidth size="large" onClick={() => handleSubmitVote()}
-                                style={{ backgroundColor: '#525757', textTransform: 'none' }}>
+                                style={{ backgroundColor: '#F1948A', textTransform: 'none' }}>
                                 Submit
                             </Button>
 
@@ -466,13 +466,13 @@ function VotingPage() {
                         <div className="adminButton">
                             {isAdmin === "false" ? <label></label> :
                                 <Button variant="contained"
-                                    size="large" onClick={() => handle()} style={{ backgroundColor: '#525757', textTransform: 'none' }}>
+                                    size="large" onClick={() => handle()} style={{ backgroundColor: '#D2B4DE', textTransform: 'none' }}>
                                     Start New Voting
                                 </Button>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             
                             {isAdmin === "false" ? <span></span> :
                                 <Button variant="contained"
-                                    size="large" onClick={() => handleReveal()} style={{ backgroundColor: '#525757', textTransform: 'none' }}>
+                                    size="large" onClick={() => handleReveal()} style={{ backgroundColor: '#A2D9CE', textTransform: 'none' }}>
                                     Reveal Cards
                                 </Button>}
                             
