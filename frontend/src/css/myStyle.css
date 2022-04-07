@@ -1,0 +1,18 @@
+.room-form{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 45%;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 5vw;
+	margin: 5vw;
+}
+.loginUser{
+    padding: 0 1rem 0 75rem;
+}
+
+.CreateUser{
+    padding: 0 75rem 0 1rem;
+}

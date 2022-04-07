@@ -1,0 +1,2 @@
+export const DEFAULT_STORY_ID="6235e32a407f7daca9866f2c"
+export const ROOM_ID="623b0c220b1ec9102241878a"
