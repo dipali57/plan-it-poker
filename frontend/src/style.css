@@ -271,7 +271,15 @@ label {
     border-radius: 18px;
     border: 1px solid #cfcece;
 }
-.spades{
+.spades {
     font-size: 50px;
-align-items: center;
+    align-items: center;
+    background-image: url("https://bluepineapple.io/wp-content/uploads/2019/11/bp-square-1.png");
+    
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    padding-right: 10px;
 }

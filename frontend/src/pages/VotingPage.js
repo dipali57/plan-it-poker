@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import "../App.css";
 import "./popstyle.css";
+import logo from "../img/bp-logo.png";
 import myStyle from "../css/myStyle.css";
 import Popup from 'reactjs-popup';
 import jwt_decode from "jwt-decode";
@@ -437,7 +438,10 @@ function VotingPage() {
                                                         if(String(user._id)===String(key.user)){
                                                         return (
                                                             
-                                                            <> {key.status ? key?.vote : <label className="spades">&spades;</label>}</>
+                                                            <> {key.status ? key?.vote :
+                                                                //  <label className="spades">&spades;</label>
+                                                                <img src={require('../img/bp-logo.png')} />
+                                                                 }</>
 
                                                         )}
                                                         else{
@@ -458,7 +462,7 @@ function VotingPage() {
                         <div className="cardbtn">
                             <Button variant="contained"
                                 fullWidth size="large" onClick={() => handleSubmitVote()}
-                                style={{ backgroundColor: '#F1948A', textTransform: 'none' }}>
+                                style={{ backgroundColor: '#AF7AC5', textTransform: 'none' }}>
                                 Submit
                             </Button>
 
@@ -466,13 +470,13 @@ function VotingPage() {
                         <div className="adminButton">
                             {isAdmin === "false" ? <label></label> :
                                 <Button variant="contained"
-                                    size="large" onClick={() => handle()} style={{ backgroundColor: '#D2B4DE', textTransform: 'none' }}>
+                                    size="large" onClick={() => handle()} style={{ backgroundColor:  '#17202A', textTransform: 'none' }}>
                                     Start New Voting
                                 </Button>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             
                             {isAdmin === "false" ? <span></span> :
                                 <Button variant="contained"
-                                    size="large" onClick={() => handleReveal()} style={{ backgroundColor: '#A2D9CE', textTransform: 'none' }}>
+                                    size="large" onClick={() => handleReveal()} style={{ backgroundColor: '#2E86C1' , textTransform: 'none' }}>
                                     Reveal Cards
                                 </Button>}
                             
